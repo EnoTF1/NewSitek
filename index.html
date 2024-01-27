@@ -8,6 +8,7 @@
           height: 700px;
           position: absolute;
           top: 100px;
+          background: repeating-linear-gradient(#C69ED0, #582A64);
         }
 
         .map{
@@ -19,7 +20,7 @@
         }
 
         .siteTop{
-          width: 100%;
+          width: 1360px;
           height: 100px;
           background-color: blueviolet;
         }
@@ -32,7 +33,21 @@
       </div>
 
       <div class="map_box">
-        <img src="https://content1.rozetka.com.ua/goods/images/original/234156077.jpg" alt="" class="map">  
-      </div>      
+        <img src="https://i.imgur.com/mlxFcPn.jpeg" alt="" class="map" id="map">  
+        <button type="button" style="position: absolute; left: 1000px; top: 50px;" onclick="bebraF()">CLICKing</button>
+        <button type="button" style="position: absolute; left: 1000px; top: 100px;" onclick="bebraA()">CLICKon</button>
+      </div>
+
+      <script>
+        function bebraF(){
+          let img = document.getElementById("map");
+          img.src = "";
+        }
+
+        function bebraA(){
+          let img = document.getElementById("map");
+          img.src = "https://i.imgur.com/mlxFcPn.jpeg";
+        }
+      </script>
     </body>
 </html>
